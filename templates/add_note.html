@@ -1,0 +1,19 @@
+<!-- add_note.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Add Note</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+
+</head>
+<body>
+    <h2>Add a New Note</h2>
+    <form method="POST">
+        <textarea name="content" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Save Note">
+    </form>
+    <p><a href="/dashboard">Back to Dashboard</a></p>
+</body>
+</html>
